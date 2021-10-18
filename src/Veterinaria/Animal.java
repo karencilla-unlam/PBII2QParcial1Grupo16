@@ -97,7 +97,7 @@ public class Animal {
 	////////////////////// Métodos//////////////////////////////
 
 	public void comer(Alimento alimento, Integer racion) {
-
+		aumentarPeso(racion);
 	}
 
 	public void aumentarPeso(Integer racion) {
@@ -110,19 +110,19 @@ public class Animal {
 
 	public void acicalarse() {
 		if (this.acicalado == false) {
-			System.out.println("Este animal NO está acicalado, ahora va a acicalarse un poco para sentirse mejor.");
+			//System.out.println("Este animal NO está acicalado, ahora va a acicalarse un poco para sentirse mejor.");
 			this.acicalado = true;
 		}
-		System.out.println("Este animal está acicalado. Puede acicalarse en otro momento.");
+		//System.out.println("Este animal está acicalado. Puede acicalarse en otro momento.");
 
 	}
 
 	public void descansar() {
 		if (this.cansado == true) {
-			System.out.println("Este animal está cansado, ahora va a descansar un poco para sentirse mejor.");
+			//System.out.println("Este animal está cansado, ahora va a descansar un poco para sentirse mejor.");
 			this.cansado = false;
 		}
-		System.out.println("Este animal NO está cansado. Puede descansar en otro momento.");
+		//System.out.println("Este animal NO está cansado. Puede descansar en otro momento.");
 
 	}
 	

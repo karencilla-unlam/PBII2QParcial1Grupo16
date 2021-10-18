@@ -7,6 +7,10 @@ public abstract class Persona {
 	private String email;
 	private String telefono;
 	private Domicilio domicilio;
+	
+	public Persona(String nombre) {
+		this.nombre=nombre;
+	}
 
 	public String getNombre() {
 		return nombre;
@@ -55,8 +59,10 @@ public abstract class Persona {
 	public void setDomicilio(Domicilio domicilio) {
 		this.domicilio = domicilio;
 	}
+	
+	public abstract String dameDescripcion();
 
-	public void darDeAltaPersona() {
+	/*public void darDeAltaPersona() {
 
 	}
 
@@ -66,5 +72,6 @@ public abstract class Persona {
 
 	public void modificarDatosPersonales() {
 
-	}
+	}*/
+	
 }
