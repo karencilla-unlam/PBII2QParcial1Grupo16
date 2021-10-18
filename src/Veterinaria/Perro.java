@@ -1,6 +1,6 @@
 package Veterinaria;
 
-public class Perro extends Animal implements Nadar, Volar, Desplazarse {
+public class Perro extends Animal implements Locomocion {
 
 	private Integer racionDiariaMaximaEnGramos = 1000;
 	private Double metabolizado=75.0;
@@ -16,9 +16,21 @@ public class Perro extends Animal implements Nadar, Volar, Desplazarse {
 
 	}
 	
-	
-	public void irDeCuerpo() {
-		this.peso-=peso*this.metabolizado/100;
+
+	@Override
+	public Boolean volar(){
+		return false;
 	}
 
+	@Override
+	public Boolean nadar(Perro perro){
+		perro.setCansado(true);
+		return true;
+	}
+
+	@Override
+	public Boolean caminar(Perro perro){
+		perro.setCansado(true);
+		return true;
+	}
 }

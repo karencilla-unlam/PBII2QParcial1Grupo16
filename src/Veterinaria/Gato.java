@@ -1,6 +1,6 @@
 package Veterinaria;
 
-public class Gato extends Animal implements Nadar, Volar, Desplazarse {
+public class Gato extends Animal implements Locomocion {
 	private Integer racionDiariaMaximaEnGramos = 750;
 
 	@Override
@@ -10,6 +10,22 @@ public class Gato extends Animal implements Nadar, Volar, Desplazarse {
 		} else {
 			System.out.println("Racion diaria excedida");
 		}
+	
+	@Override
+	public Boolean volar(){
+		return false;
+	}
 
+	@Override
+	public Boolean nadar(){
+		return false;
+	}
+
+	@Override
+	public Boolean caminar(Gato gato){
+		gato.setCansado(true);
+		return true;
+	}
+	
 	}
 }
