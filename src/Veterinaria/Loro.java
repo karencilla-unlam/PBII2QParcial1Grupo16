@@ -20,12 +20,13 @@ public class Loro extends Animal implements Locomocion {
 
 	@Override
 	public Boolean nadar() {
+		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
 	public Boolean caminar() {
-		return true;
+		this.cansado = true;
+		return cansado;
 	}
-
 }

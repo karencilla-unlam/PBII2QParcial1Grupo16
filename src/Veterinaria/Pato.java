@@ -10,23 +10,24 @@ public class Pato extends Animal implements Locomocion {
 		} else {
 			System.out.println("Racion diaria excedida");
 		}
+	}
 
-	@Override
-	public Boolean volar(Pato pato){
-		pato.setCansado(true);
-		return true;
-	}
-		
-	@Override
-	public Boolean nadar(Pato pato){
-		pato.setCansado(true);
-		return true;
-	}
-		
-	@Override
-	public Boolean caminar(Pato pato){
-		pato.setCansado(true);
-		return true;
-	}
-	}
+		@Override
+		public Boolean volar() {
+			this.cansado = true;
+			return cansado;
+		}
+
+		@Override
+		public Boolean nadar() {
+			// TODO Auto-generated method stub
+			return false;
+		}
+
+		@Override
+		public Boolean caminar() {
+			this.cansado = true;
+			return cansado;
+		}
+
 }

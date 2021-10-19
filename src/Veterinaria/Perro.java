@@ -3,7 +3,7 @@ package Veterinaria;
 public class Perro extends Animal implements Locomocion {
 
 	private Integer racionDiariaMaximaEnGramos = 1000;
-	private Double metabolizado=75.0;
+	private Double metabolizado = 75.0;
 
 	@SuppressWarnings("unlikely-arg-type")
 	@Override
@@ -15,22 +15,22 @@ public class Perro extends Animal implements Locomocion {
 		}
 
 	}
-	
 
 	@Override
-	public Boolean volar(){
+	public Boolean volar() {
+		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
-	public Boolean nadar(Perro perro){
-		perro.setCansado(true);
-		return true;
+	public Boolean nadar() {
+		this.cansado = true;
+		return cansado;
 	}
 
 	@Override
-	public Boolean caminar(Perro perro){
-		perro.setCansado(true);
-		return true;
+	public Boolean caminar() {
+		this.cansado = true;
+		return cansado;
 	}
 }
