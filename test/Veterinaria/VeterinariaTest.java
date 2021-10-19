@@ -13,5 +13,16 @@ public class VeterinariaTest{
 		//assertTrue(animal.pesar());
 	}
 
-	
+	@Test
+	public void TestQueUnLoroVuela() {
+		//Preparacion
+		Loro unLoro= new Loro();
+		Boolean valorEsperado=true;
+		Boolean valorRecibido;
+		//Ejecucion
+		valorRecibido=unLoro.volar();
+		//Contrastacion
+		assertEquals(valorEsperado, valorRecibido);
+		
+	}
 }
