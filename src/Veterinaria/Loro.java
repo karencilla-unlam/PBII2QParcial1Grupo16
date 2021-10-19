@@ -10,23 +10,22 @@ public class Loro extends Animal implements Locomocion {
 		} else {
 			System.out.println("Racion diaria excedida");
 		}
-	
-	@Override
-	public Boolean volar(Loro loro){
-		loro.setCansado(true);
-		return true;
 	}
-	
+
 	@Override
-	public Boolean nadar(){
+	public Boolean volar() {
+		this.cansado = true;
+		return cansado;
+	}
+
+	@Override
+	public Boolean nadar() {
 		return false;
 	}
-	
+
 	@Override
-	public Boolean caminar(Loro loro){
-		loro.setCansado(true);
+	public Boolean caminar() {
 		return true;
 	}
 
-	}
 }

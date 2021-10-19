@@ -10,7 +10,7 @@ public class Animal {
 	private String fechaDeNacimiento;
 	private Integer tratamientosRecibidos;
 	private Boolean acicalado;
-	private Boolean cansado;
+	protected Boolean cansado;
 	private Double metabolizado;
 	
 
