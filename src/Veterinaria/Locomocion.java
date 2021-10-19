@@ -1,6 +1,6 @@
 package Veterinaria;
 
-public interface Desplazarse {
+public interface Locomocion {
     Boolean volar();
     Boolean nadar();
     Boolean caminar();
